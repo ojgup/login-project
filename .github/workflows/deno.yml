@@ -38,10 +38,10 @@ jobs:
         run: deno test -A --unstable
         
       - name: Install Dependencies
-      - run: npm ci
+        run: npm ci
         
       - name: Test
-      - run: npm run test:ci
+        run: npm run test:ci
         
       - name: Build
-      - run: npm run build:ci
+        run: npm run build:ci

@@ -32,6 +32,9 @@ jobs:
         with:
           deno-version: ${{ matrix.deno }} # tests across multiple Deno versions
         
+      - name: Clean Cache
+        run: npm cache clean
+         
       - name: Install Dependencies
         run: npm install
         

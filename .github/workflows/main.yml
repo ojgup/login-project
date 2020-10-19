@@ -1,0 +1,16 @@
+on: push
+name: Build Angular
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      
+      - name: npm install and npm run build
+        run: |
+          npm i
+          npm run build:prod

@@ -14,3 +14,7 @@ jobs:
         run: |
           npm i
           npm run build:ci
+      
+      - name: Test App
+        run: |
+          npm test
